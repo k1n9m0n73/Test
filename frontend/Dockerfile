@@ -5,7 +5,7 @@ FROM nginx:latest
 COPY ./  /usr/share/nginx/html
 
 # Expose the port on which the Nginx server runs
-EXPOSE 80
+EXPOSE 8080
 
 # Start Nginx server when the container starts
 CMD ["nginx", "-g", "daemon off;"]

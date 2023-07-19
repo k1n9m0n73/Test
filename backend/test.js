@@ -1,15 +1,13 @@
 const express = require('express')
-const cors = require('cors')
 const app = express()
+const path = require('path')
 const port = process.env.PORT || 3000
 
-app.use(cors()) // Enable CORS for all routes
-
+app.use(express.static(path.join(__dirname, '../frontend')))
 
 app.get('/', (req, res) => {
- res.send('Backend Service is Live - Hello World!')
+  res.sendFile('Api working')
 })
-
 
 app.get('/api/data', (req, res) => {
   const data = {

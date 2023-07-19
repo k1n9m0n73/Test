@@ -1,13 +1,12 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "frontend service",
-  "main": "index.html",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p /usr/src/app/build && cp index.html /usr/src/app/build"
-    
+    "build": "mkdir -p build && cp index.html build/"
   },
-  "author": "kingmonte",
+  "author": "",
   "license": "ISC"
 }

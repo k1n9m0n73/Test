@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p dist && cp index.html dist/"
+    "build": "mkdir -p /usr/src/app/build && cp index.html /usr/src/app/build"
     
   },
   "author": "kingmonte",

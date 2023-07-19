@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 app.use(express.static(path.join(__dirname, '../frontend')))
 
 app.get('/', (req, res) => {
-  res.sendFile('Api working')
+  res.sendFile('Backend Service up and running')
 })
 
 app.get('/api/data', (req, res) => {

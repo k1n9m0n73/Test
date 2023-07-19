@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy the static files to the container
-COPY ./dist /usr/share/nginx/html
+COPY ./  /usr/share/nginx/html
 
 # Expose the port on which the Nginx server runs
 EXPOSE 80

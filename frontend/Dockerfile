@@ -20,7 +20,7 @@ RUN npm run build
 FROM node:14-alpine
 
 # Set the working directory
-WORKDIR /service/frontend/
+WORKDIR usr/src/app
 
 # Copy the built frontend code from the previous stage
 COPY --from=build /usr/src/app/build ./build

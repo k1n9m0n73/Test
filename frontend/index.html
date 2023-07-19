@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Frontend Service</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to the Frontend Service!</h1>
+    <p>This is a simple frontend service.</p>
+    <button onclick="fetchData()">Get Data from Backend</button>
+    <div id="data"></div>
+
+    <script>
+      async function fetchData() {
+        try {
+          const response = await axios.get('/api/data');
+          document.getElementById('data').textContent = response.data.message;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    </script>
+  </body>
+</html>

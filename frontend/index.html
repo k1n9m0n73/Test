@@ -12,7 +12,11 @@
   <script>
     async function fetchData() {
       try {
+<<<<<<< HEAD
         const response = await fetch('https://private-service-frontend-cam7m4qxcq-uc.a.run.app/api/data');
+=======
+        const response = await fetch('https://private-service-backend-cam7m4qxcq-uc.a.run.app/api/data');
+>>>>>>> acb9a3ecdd9c8cd4d53b8c7a13fdaeb389ec7c51
         const data = await response.json();
         document.getElementById('response').innerText = JSON.stringify(data);
       } catch (error) {

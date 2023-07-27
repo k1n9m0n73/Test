@@ -14,7 +14,7 @@ RUN npm install --production
 COPY . .
 
 # Expose the port on which your Node.js app runs
-EXPOSE 3000
+EXPOSE 443
 
 # Specify the command to run your Node.js app
 CMD ["node", "index.js"]
